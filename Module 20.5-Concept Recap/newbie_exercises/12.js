@@ -1,6 +1,5 @@
 /* Write a JS program to find sum of first and last digit of a number. */
-/* Write a JS program to find first and last digit of a number. */
-function findFirstLastDigit(number) {
+function sumFirstLastDigit(number) {
     /* approach 1 */
     storeNumber = number.toString()
     console.log("First digit is: " + storeNumber[0] + ' & ' + "Last digit is: " + storeNumber[storeNumber.length - 1]);
@@ -21,4 +20,4 @@ function findFirstLastDigit(number) {
     // console.log("Summation of first and last digits: " + (firstDigit + lastDigit));
 }
 
-findFirstLastDigit(1935205);
+sumFirstLastDigit(1935205);
