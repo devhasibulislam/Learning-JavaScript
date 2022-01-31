@@ -1,0 +1,1 @@
+/* Write a JS program to swap first and last digits of a number. */
