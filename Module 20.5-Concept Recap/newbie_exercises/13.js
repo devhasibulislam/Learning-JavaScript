@@ -16,7 +16,7 @@ function swappedNum(num) {
     // print original number
     console.log(num);
     // print swapped number for first and last
-    console.log(swappedNum);
+    return swappedNum;
 }
 
-swappedNum(1935207);
+console.log(swappedNum(1935207));
