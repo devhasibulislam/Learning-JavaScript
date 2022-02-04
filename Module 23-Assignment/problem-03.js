@@ -7,6 +7,7 @@ function picnicBudget(numberOfMembers) {
     if (numberOfMembers <= 0){
         return 'Zero or Negative input no allow';
     }
+
     else if (numberOfMembers > 0) {
         if (numberOfMembers <= 100) {
             budgetForFirst100 = numberOfMembers * moneyForFirst100;
@@ -25,6 +26,7 @@ function picnicBudget(numberOfMembers) {
         }
         return leviedMoney; /* return as number */
     }
+
     else{
         return 'String or Symbol not allow';
     }
@@ -38,4 +40,4 @@ function picnicBudget(numberOfMembers) {
 // console.log(picnicBudget(-1));
 // console.log(picnicBudget(0));
 
-console.log(picnicBudget(51));
+console.log(picnicBudget(350));

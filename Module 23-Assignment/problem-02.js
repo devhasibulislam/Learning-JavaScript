@@ -1,8 +1,9 @@
 function pandaCost(singaraQuantity, samosaQuantity, jalebiQuantity) {
-    if ((singaraQuantity < 0) || (samosaQuantity < 0) || (jalebiQuantity < 0))
+    if ((singaraQuantity < 0) || (samosaQuantity < 0) || (jalebiQuantity < 0)) {
         return 'Negative input not allow';
+    }
 
-    else if ((singaraQuantity >= 0) &&  (samosaQuantity >= 0) && (jalebiQuantity >= 0)) {
+    else if ((singaraQuantity >= 0) && (samosaQuantity >= 0) && (jalebiQuantity >= 0)) {
         const totalSingaraPrice = singaraQuantity * 7;
         const totaSamosaPrice = samosaQuantity * 10;
         const totalJalebiPrice = jalebiQuantity * 15;
