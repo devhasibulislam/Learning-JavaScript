@@ -1,4 +1,5 @@
 // ---------- Problem 1: ----------
+// ana to vori conversion
 
 function anaToVori(ana) {
     if (typeof ana === 'string') {
@@ -18,14 +19,18 @@ function anaToVori(ana) {
 // console.log(typeof(anaToVori(35))); /* check wheather it is number or string */
 
 /* handling errors */
-// console.log(anaToVori('35'));
-// console.log(anaToVori('&'));
-// console.log(anaToVori(-35));
-// console.log(anaToVori(0));
+console.log(anaToVori('35'));
+console.log(anaToVori('&'));
+console.log(anaToVori(-35));
+console.log(anaToVori(0));
 
-console.log(anaToVori(35));
+/* actual output */
+const ana = 35
+console.log(anaToVori(ana));
+console.log();
 
 // ---------- Problem 2: ----------
+// singara, samosa & jalebi total price with respect quantity
 
 function pandaCost(singaraQuantity, samosaQuantity, jalebiQuantity) {
     if ((singaraQuantity < 0) || (samosaQuantity < 0) || (jalebiQuantity < 0)) {
@@ -54,16 +59,19 @@ function pandaCost(singaraQuantity, samosaQuantity, jalebiQuantity) {
 // console.log(typeof(pandaCost(3, 5, 2))); /* check wheather it is number or string */
 
 /* handling errors */
-// console.log(pandaCost(3, 5, -2));
-// console.log(pandaCost(-3, 5, -2));
-// console.log(pandaCost(-3, 5.1, -2));
-// console.log(pandaCost(3, 'Hello', 2));
-// console.log(pandaCost('3', 'Hello', 2));
-// console.log(pandaCost('3', 'Hello', '2'));
+console.log(pandaCost(-3, 5, -2));
+console.log(pandaCost('&', 'Hello', 2));
+console.log(pandaCost(0, 0, 0));
 
-console.log(pandaCost(3, 5.1, 0));
+/* actual output */
+const singara = 3;
+const samosa = 5;
+const jalebi = 0;
+console.log(pandaCost(singara, samosa, jalebi));
+console.log();
 
 // ---------- Problem 3: ----------
+// budget for picnic with respect vary to member
 
 function picnicBudget(numberOfMembers) {
     const moneyForFirst100 = 5000;
@@ -102,14 +110,18 @@ function picnicBudget(numberOfMembers) {
 // console.log(typeof(picnicBudget(100))); /* check wheather it is number or string */
 
 /* handling errors */
-// console.log(picnicBudget('hello'));
-// console.log(picnicBudget('&'));
-// console.log(picnicBudget(-1));
-// console.log(picnicBudget(0));
+console.log(picnicBudget('hello'));
+console.log(picnicBudget('&'));
+console.log(picnicBudget(-1));
+console.log(picnicBudget(0));
 
-console.log(picnicBudget(350));
+/* actual output */
+const budget = 350;
+console.log(picnicBudget(budget));
+console.log();
 
 // ---------- Problem 4: ----------
+// odd number length from first friend's name
 
 function oddFriend(myFriends) {
     let flag = false;
@@ -131,9 +143,7 @@ function oddFriend(myFriends) {
 // console.log(typeof(oddFriend(['Rakib', 'Dibos', 'Laish', 'Sabbir', 'Hasib']))); /* check wheather it is number or string */
 
 /* handling errors */
-// console.log(oddFriend(['Sabbir', 'Dibos1', 'Rakib2', 'Laish3', 'Hasib4']));
-// console.log(oddFriend(['Sabbir', 'Dibos1', 'Rakib2', 'Laish3']));
-// console.log(oddFriend(['Sabbir', 'Dibos1', 'Rakib2']));
+console.log(oddFriend(['Sabbir', 'Dibos1', 'Rakib2', 'Laish3', 'Hasib4']));
 
-
-console.log(oddFriend(['Sabbir', 'Rakib', 'Dibos', 'Laish', 'Hasib']));
+const friends = ['Sabbir', 'Rakib', 'Dibos', 'Laish', 'Hasib'];
+console.log(oddFriend(friends));
