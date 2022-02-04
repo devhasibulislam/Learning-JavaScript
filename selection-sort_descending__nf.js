@@ -1,4 +1,4 @@
-/* Selection Sort */
+/* Selection Sort in descending order */
 // nf => no function using here!
 var data = [7, 4, 10, -8, 3, 1];
 var i, j; /* iteration */
@@ -8,7 +8,7 @@ var temp; /* temp => temporary */
 for(i = 0; i < data.length - 1; i++){
     min = i;
     for(j = i + 1; j < data.length; j++){
-        if(data[j] < data[min]){
+        if(data[j] > data[min]){
             min = j;
         }
     }
