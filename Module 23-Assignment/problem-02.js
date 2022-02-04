@@ -1,3 +1,5 @@
+// Problem 2:
+
 function pandaCost(singaraQuantity, samosaQuantity, jalebiQuantity) {
     if ((singaraQuantity < 0) || (samosaQuantity < 0) || (jalebiQuantity < 0)) {
         return 'Negative input not allow';

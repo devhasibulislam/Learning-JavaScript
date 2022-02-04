@@ -1,3 +1,5 @@
+// Problem 3:
+
 function picnicBudget(numberOfMembers) {
     const moneyForFirst100 = 5000;
     const moneyForSecond100 = 4000;
